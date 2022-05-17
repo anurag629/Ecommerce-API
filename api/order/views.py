@@ -31,7 +31,7 @@ def add(request, id, token):
         amount = request.POST['amount']
         products = request.POST['products']
 
-        total_pro = len(products.split('.')[:-1])
+        total_pro = len(products.split(',')[:-1])
 
         UserModel = get_user_model()
 
